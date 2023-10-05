@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F1D8;
+    font-family: "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+h1,
+h2,
+ul,
+li,
+table,
+tr,
+th,
+td,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    margin: 0;
+    padding: auto;
+
+}
+
+.carousel ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 40px;
+   
+}
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h2 {
+    font-size: 1.4rem;
+    color: #361E04;
+    -webkit-text-stroke: 0.4px #CBC4B7;
+    background-image: url(../img/icon1.png);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 1px;
+    text-align: left;
+    text-indent: 2rem;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+span {
+    font-size: 2.2rem;
+}
+
+p {
+    color: #361E04;
+    text-align: left;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #361E04;
+    background-image: url(../img/icon2.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-align: left;
+    text-indent: 2.2rem;
+    padding-top: 4px;
+}
+
+header {
+    text-align: center;
+}
+
+.headimg {
+    padding: 30px 40px 0 40px;
+    display: inline-block;
+    margin: 5px;
+    width:400px;
+    height: auto;
+
+}
+
+.carousel {
+    position: relative;
+    max-width: 1500px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel .frame {
+    position: absolute;
+    display: inline-block;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+
+}
+
+.carousel .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: bgAnime 20s infinite;
+    display: inline-block;
+
+
+}
+
+.carousel .no1 {
+    background-image: url(../img/kids1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+
+}
+
+.carousel .no2 {
+    background-image: url(../img/kids3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 5s;
+    background-size: 300px;
+}
+
+.carousel .no3 {
+    background-image: url(../img/kids4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 10s;
+    background-size: 300px;
+}
+
+.carousel .no4 {
+    background-image: url(../img/kids5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-delay: 15s;
+    background-size: 300px;
+}
+
+@keyframes bgAnime {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.carousel button {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    flex: 0 0 auto;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.carousel .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.donnguritoha{
+    text-align: center;
+}
+.donnguritoha .kidsimg {
+    width: 500px;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+    display: inline-block;
+   
+}
+
+
+.donnguritoha .gaiyou table {
+    border: 2px solid #CBC4B7;
+    border-collapse: collapse;
+    margin-top: -20px;
+    color: #361E04;
+    width: 295px;
+    height: 150px;
+}
+
+.donnguritoha .gaiyou table th {
+    border: 2px solid #CBC4B7;
+    padding: 8px;
+    line-height: 1.7rem;
+    background-color: #DDDAD9;
+    font-size: 0.875rem;
+}
+
+.donnguritoha .gaiyou table td {
+    border: 2px solid #CBC4B7;
+    padding: 8px;
+    stroke-linecap: 1, 7rem;
+    background-color: #fff;
+    font-size: 0.875rem;
+}
+
+.syoukai .entei::after {
+    content: '●園庭●';
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 15px;
+    right: 15px;
+    display: block;
+    position: absolute;
+    color: #F9981A;
+    text-shadow: 2px 2px 3px #fff;
+}
+
+.syoukai .entei {
+    position: relative;
+}
+
+.syoukai .playroom::after {
+    content: '●プレイルーム●';
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 15px;
+    right: 15px;
+    display: block;
+    position: absolute;
+    color: #F9981A;
+    text-shadow: 2px 2px 3px #fff;
+}
+
+.syoukai .playroom {
+    position: relative;
+}
+
+.syoukai .sunaba::after {
+    content: '●砂場●';
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 15px;
+    right: 15px;
+    display: block;
+    position: absolute;
+    color: #F9981A;
+    text-shadow: 2px 2px 3px #fff;
+}
+
+.syoukai .sunaba {
+    position: relative;
+}
+
+.syoukai ul {
+    list-style: none;
+
+}
+
+.syoukai {
+    padding-bottom: 20px;
+
+}
+
+.access {
+    text-align: left;
+    display: block;
+}
+
+.access h2 {
+    margin: 0;
+}
+
+
+
+.access dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    font-size: 0.875rem;
+    color: #361E04;
+    text-align: left;
+    text-indent: 2rem;
+    padding-top: 20px;
+}
+
+.access dt {
+    font-weight: bold;
+    width: 40%;
+    text-align: left;
+}
+
+.access dd {
+    width: 60%;
+    text-align: left;
+    text-indent: -0.1rem;
+}
+
+.access iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 47vw;
+}
+
+.form {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+}
+
+.form-item label {
+    color: #361E04;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.form-item input[type="text"] {
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 15px 15px;
+    margin-bottom: 13px;
+    border: 1px solid #361E04;
+}
+
+.form-item textarea {
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 15px 15px;
+    margin-bottom: 13px;
+    border: 1px solid #361E04;
+    height: 200px;
+    resize: none;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.form input[type="submit"] {
+    background-color: #E9A314;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    min-width: 240px;
+    appearance: none;
+    background-image: url(../img/icn_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 20px center;
+    box-shadow: 1px 2px 8px #361E04;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus {
+    background-color: #3C9F34;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #F0BB50;
+    text-align: center;
+    color: #fff;
+}
+
+footer dl {
+    text-align: center;
+    padding: 0 50px 28px 50px;
+
+}
+
+footer a {
+    color: #fff;
+}
+
+footer img {
+    width: 140px;
+    padding: 20px 100px;
+}
+
+@media(min-width:768px) {
+    .container {
+        max-width: 740px;
+        margin: auto;
+    }
+
+
+    h2 {
+        font-size: 2.6rem;
+        text-indent: 2rem;
+        background-size: 100px;
+        background-position: left 2px bottom 3px;
+
+    }
+
+    span {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+        background-size: 70px;
+        text-indent: 3.8rem;
+    }
+
+    .gaiyou {
+        display: flex;
+        padding: 0 50px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .gaiyou .sisetsu {
+        flex-direction: column;
+    }
+
+    .gaiyou .ichizihoiku {
+        flex-direction: column;
+    }
+
+    .access dl {
+        font-size: 1.1rem;
+    }
+
+    footer img {
+        width: 240px;
+    }
+
+}
