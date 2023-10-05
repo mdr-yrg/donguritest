@@ -1,6 +1,8 @@
 body {
+    
     margin: 0;
-    padding: 0;
+    padding: 0 ;
+    text-align: center;
     background-color: #F8F1D8;
     font-family: "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
@@ -32,6 +34,7 @@ dd {
 
 .container {
     margin: 0 40px;
+    text-align: center;
    
 }
 img {
@@ -87,7 +90,7 @@ header {
     padding: 30px 40px 0 40px;
     display: inline-block;
     margin: 5px;
-    width:400px;
+    width:60%;
     height: auto;
 
 }
@@ -182,30 +185,12 @@ header {
 }
 
 
-.carousel button {
-    background: none;
-    border: none;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    flex: 0 0 auto;
-    overflow: visible;
-    cursor: pointer;
-}
-
-.carousel .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
 
 .donnguritoha{
     text-align: center;
 }
 .donnguritoha .kidsimg {
-    width: 500px;
+    width: 60%;
     height: auto;
     padding: 0;
     margin-top: 10px;
@@ -409,8 +394,10 @@ header {
 
 footer {
     background-color: #F0BB50;
+    background-size: auto;
     text-align: center;
     color: #fff;
+
 }
 
 footer dl {
