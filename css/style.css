@@ -1,7 +1,7 @@
 body {
-    
+
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     text-align: center;
     background-color: #F8F1D8;
     font-family: "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -22,21 +22,12 @@ dd {
     padding: 0;
 }
 
-.carousel {
-    margin: 0;
-    padding: auto;
-
-}
-
-.carousel ul {
-    list-style: none;
-}
-
 .container {
     margin: 0 40px;
     text-align: center;
-   
+
 }
+
 img {
     width: 100%;
     margin: 0;
@@ -46,12 +37,12 @@ img {
 
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #361E04;
     -webkit-text-stroke: 0.4px #CBC4B7;
     background-image: url(../img/icon1.png);
     background-repeat: no-repeat;
-    background-size: 80px;
+    background-size: 75px;
     background-position: 1px;
     text-align: left;
     text-indent: 2rem;
@@ -61,7 +52,7 @@ h2 {
 }
 
 span {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
 }
 
 p {
@@ -72,7 +63,7 @@ p {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #361E04;
     background-image: url(../img/icon2.png);
     background-size: 40px;
@@ -90,15 +81,17 @@ header {
     padding: 30px 40px 0 40px;
     display: inline-block;
     margin: 5px;
-    width:60%;
+    width: 60%;
     height: auto;
-
+    max-width: 400px;
 }
 
 .carousel {
     position: relative;
+    display: inline-block;
     max-width: 1500px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -107,13 +100,13 @@ header {
 
 .carousel .frame {
     position: absolute;
-    display: inline-block;
+    max-width: 100%;
+    min-width: 320px;
     z-index: 20;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 400px;
-    height: 300px;
+    height: auto;
 
 }
 
@@ -125,7 +118,7 @@ header {
     bottom: 0;
     opacity: 0;
     animation: bgAnime 20s infinite;
-    display: inline-block;
+    text-align: center;
 
 
 }
@@ -134,7 +127,8 @@ header {
     background-image: url(../img/kids1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 300px;
+    background-size: 37%;
+
 
 }
 
@@ -143,7 +137,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     animation-delay: 5s;
-    background-size: 300px;
+    background-size: 37%;
 }
 
 .carousel .no3 {
@@ -151,7 +145,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     animation-delay: 10s;
-    background-size: 300px;
+    background-size: 37%;
 }
 
 .carousel .no4 {
@@ -159,7 +153,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     animation-delay: 15s;
-    background-size: 300px;
+    background-size: 37%;
 }
 
 @keyframes bgAnime {
@@ -186,16 +180,17 @@ header {
 
 
 
-.donnguritoha{
+.donnguritoha {
     text-align: center;
 }
+
 .donnguritoha .kidsimg {
     width: 60%;
     height: auto;
     padding: 0;
     margin-top: 10px;
     display: inline-block;
-   
+
 }
 
 
@@ -206,6 +201,8 @@ header {
     color: #361E04;
     width: 295px;
     height: 150px;
+   margin: auto;
+
 }
 
 .donnguritoha .gaiyou table th {
@@ -467,4 +464,25 @@ footer img {
         width: 240px;
     }
 
+}
+
+@media(max-width:767px) {
+
+    .carousel {
+        height: 230px;
+        margin-top: 20px;
+    }
+
+    .carousel .no1{
+        background-size: 240px;
+    }
+    .carousel .no2{
+        background-size: 240px;
+    }
+    .carousel .no3{
+        background-size: 240px;
+    }
+    .carousel .no4{
+        background-size: 240px;
+    }
 }
